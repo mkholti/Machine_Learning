@@ -1,0 +1,17 @@
+{
+    "FILEPATH" : "data/train.tsv",
+    "CSV_READER_ARGS" : {"sep" : "\t"},
+    "SENTENCE_COLUMN_NAME" : "Phrase",
+    "SENTIMENT_COLUMN_NAME" : "Sentiment",
+    "PARAM_VECTORIZER" : {"sublinear_tf" : 1, "norm" : "l2", "stop_words" : "english", "encoding" : "latin-1", "min_df" : 10, "ngram_range" : [1,1],
+                          "max_df" : 0.95, "use_idf" : 0 },
+    "PARAM_CLASSIFIER" : {"solver" : "saga", "multi_class" : "multinomial", "max_iter" : 4000, "C" : 3},
+    "PARAM_GRID" :  {"LINSPACE_ARGS" : [10, 1000000, 100], "tfidf_max_df" : [0.95, 0.97, 0.99], "tfidf_ngram_range" : [[1, 1], [1, 2], [1, 3]],  
+                     "tfidf_min_df" : [5, 10, 15], "tfidf_use_idf" :[1, 0], "tfidf_sublinear_tf" : [1, 0] }
+    
+    
+    
+    
+ 
+
+}
